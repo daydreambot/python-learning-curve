@@ -138,4 +138,5 @@ def count_primes(num):
                     break
             if is_prime:
                 primes.append(n)
+
     return len(primes)
