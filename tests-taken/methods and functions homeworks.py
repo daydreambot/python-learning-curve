@@ -58,3 +58,15 @@ def palindrome(s):
     else:
         print(f'\nHere is the reverse: {s[::-1]}')
         return '\nIt is not a palindrome!!'
+
+#Homework7
+import string
+def ispangram(str1, alphabet=string.ascii_lowercase):
+    new_string = str1.replace(" ", "")
+    low_string = set(new_string.lower())
+    alphabet_set = set(alphabet)
+    
+    if alphabet_set.issubset(low_string):
+        return True
+    else:
+        return False
